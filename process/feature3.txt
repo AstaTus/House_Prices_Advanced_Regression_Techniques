@@ -1,0 +1,2 @@
+process_df = pd.get_dummies(combine_df['MSSubClass'], prefix="MSSubClass")
+process_df = pd.merge(process_df, mszoning_encoder_df, left_index=False, right_index=False)
