@@ -1,2 +1,85 @@
 process_df = pd.get_dummies(combine_df['MSSubClass'], prefix="MSSubClass")
 process_df = pd.merge(process_df, mszoning_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, lot_frontage_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, lot_area_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, lot_shape_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, land_contour_encoder_df, left_index=False, right_index=False)
+
+
+process_df = pd.merge(process_df, lot_config_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, land_slope_encoder_df, left_index=False, right_index=False)
+
+
+process_df = pd.merge(process_df, neighborhood_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, condition1_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, bldg_type_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, house_style_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, house_style_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, overall_qual_df, left_index=False, right_index=False)
+process_df = pd.merge(process_df, overall_cond_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, year_built_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, year_remodadd_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, roof_style_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, roof_matl_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, exterior1st_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, exterior1st_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, exterior2nd_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, masvnrtype_encoder_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, mas_vnr_area_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, exter_qual_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, exter_cond_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, foundation_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, combine_df['Has_Bsmt'], left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, bsmt_qual_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, bsmt_fin_type1_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, bsmt_fin_SF1_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, bsmt_fin_type2_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, bsmt_fin_SF2_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, bsmt_unf_sf_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, total_bsmt_sf_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, heating_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, heating_qc_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, central_air_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, electrical_encoder, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, fst_flr_sf_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, low_qual_fin_sf_df, left_index=False, right_index=False)
+
+process_df = pd.merge(process_df, gr_liv_area_df, left_index=False, right_index=False)
+
+
