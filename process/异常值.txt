@@ -1,0 +1,3 @@
+drop item
+OverallQual:458\524\1299
+GrLivArea:524\1299
